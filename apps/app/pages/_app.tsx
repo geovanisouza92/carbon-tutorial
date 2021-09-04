@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './app.scss';
+import TutorialHeader from '../components/TutorialHeader';
+import { Content } from 'carbon-components-react';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,7 +11,10 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Carbon Tutorial</title>
       </Head>
       <div>
-        <Component {...pageProps} />
+        <TutorialHeader />
+        <Content>
+          <Component {...pageProps} />
+        </Content>
       </div>
     </>
   );
