@@ -10,6 +10,9 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  sassOptions: {
+    quietDeps: true,
+  },
 };
 
 module.exports = withNx(nextConfig);
