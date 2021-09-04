@@ -1,0 +1,7 @@
+@import "~carbon-components/scss/globals/scss/vars.scss";
+
+.page {
+  :global(.bx--row) {
+    padding: $spacing-05 0;
+  }
+}
