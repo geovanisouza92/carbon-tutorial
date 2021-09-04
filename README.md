@@ -1,6 +1,10 @@
-
-
 # CarbonTutorial
+
+Carbon Design-system tutorial using [Next.js](https://nextjs.org) inside a Nx workspace.
+
+[Open this link](TODO) to see a live preview on [Vercel](https://vercel.com).
+
+---
 
 This project was generated using [Nx](https://nx.dev).
 
