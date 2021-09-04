@@ -18,9 +18,9 @@ import {
   UserAvatar20,
 } from '@carbon/icons-react';
 import Link from 'next/link';
-import './styles.scss';
+import './index.module.scss';
 
-export default function TutorialHeader() {
+export function TutorialHeader() {
   return (
     <HeaderContainer
       render={({ isSideNavExpanded, onClickSideNavExpand }) => (
@@ -61,12 +61,14 @@ export default function TutorialHeader() {
             <HeaderGlobalAction aria-label="User profile">
               <UserAvatar20 />
             </HeaderGlobalAction>
-            <HeaderGlobalBar aria-label="App switcher">
+            <HeaderGlobalAction aria-label="App switcher">
               <AppSwitcher20 />
-            </HeaderGlobalBar>
+            </HeaderGlobalAction>
           </HeaderGlobalBar>
         </Header>
       )}
     />
   );
 }
+
+export default TutorialHeader;
