@@ -12,6 +12,11 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from 'carbon-components-react';
+import {
+  AppSwitcher20,
+  Notification20,
+  UserAvatar20,
+} from '@carbon/icons-react';
 import Link from 'next/link';
 import './styles.scss';
 
@@ -49,7 +54,17 @@ export default function TutorialHeader() {
               </HeaderSideNavItems>
             </SideNavItems>
           </SideNav>
-          <HeaderGlobalBar />
+          <HeaderGlobalBar>
+            <HeaderGlobalAction aria-label="Notifications">
+              <Notification20 />
+            </HeaderGlobalAction>
+            <HeaderGlobalAction aria-label="User profile">
+              <UserAvatar20 />
+            </HeaderGlobalAction>
+            <HeaderGlobalBar aria-label="App switcher">
+              <AppSwitcher20 />
+            </HeaderGlobalBar>
+          </HeaderGlobalBar>
         </Header>
       )}
     />
