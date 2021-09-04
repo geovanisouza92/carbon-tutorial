@@ -1,7 +1,71 @@
-.page {}
+@import "~carbon-components/scss/globals/scss/typography.scss";
+@import "~carbon-components/scss/globals/scss/vars.scss";
 
-.page__banner {}
+@mixin page-background() {
+  background-color: $ui-01;
+  position: relative;
 
-.page__r2 {}
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    // right: -$spacing-06;
+    bottom: 0;
+    // left: -$spacing-06;
+    background: $ui-01;
+    z-index: -1;
+  }
+}
 
-.page__r3 {}
+.page {
+  &__banner {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-07 * 4;
+    @include page-background;
+  }
+
+  &__heading {
+    @include carbon--type-style('productive-heading-05');
+  }
+
+  &__tabContent {
+    padding: $layout-05 0;
+  }
+
+  &__subheading {
+    @include carbon--type-style('productive-heading-03');
+    @include carbon--font-weight('semibold');
+  }
+
+  &__p {
+    @include carbon--type-style('productive-heading-03');
+    margin-top: $spacing-06;
+    margin-bottom: $spacing-08;
+
+    @include carbon--breakpoint-between((320px + 1), md) {
+      max-width: 75%;
+    }
+  }
+
+  &__r2 {
+    margin-top: rem(-40px);
+
+    :global(.bx--tabs--scrollable) {
+      transform: translateZ(0);
+      justify-content: flex-end;
+    }
+
+    :global(.bx--tab-content) {
+      padding: 0;
+    }
+  }
+
+  &__r3 {
+    padding: $spacing-09 0;
+    @include page-background;
+  }
+
+  &__label {
+    @include carbon--type-style('heading-01');
+  }
+}
