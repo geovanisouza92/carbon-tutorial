@@ -2,7 +2,17 @@
 
 Carbon Design-system tutorial using [Next.js](https://nextjs.org) inside a Nx workspace.
 
-[Open this link](TODO) to see a live preview on [Vercel](https://vercel.com).
+[Open this link](https://carbon-tutorial-two.vercel.app) to see a live preview on [Vercel](https://vercel.com).
+
+Refer to [this link](https://nx.dev/latest/react/guides/deploy-nextjs-to-vercel) to see how easy is to deploy this app on Vercel.
+
+## Lighthouse score for desktop
+
+![Lighthouse score for desktop](./assets/desktop.png)
+
+## Lighthouse score for mobile
+
+![Lighthouse score for mobile](./assets/mobile.png)
 
 ---
 
